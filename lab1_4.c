@@ -5,8 +5,8 @@ int main()
 
     long int X1,S,X2;
     scanf("%ld %ld",&X1,&S);
-
-    printf("%ld %ld",n%3,n%11);
+    X2=(S*2)-X1;
+    printf("%ld",X2);
 
     return 0;
 }
