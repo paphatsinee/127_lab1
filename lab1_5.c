@@ -2,15 +2,20 @@
 
 int main()
 {
+    int N,i,n;
+    int max;
 
-    long int N,i;
-    scanf("%ld",&N);
-    for(i=1,i<=N;i++)
+    scanf("%d", &N);
+     for(i = 0; i < N; i++)
     {
-        scanf("%ld",&a[i])
-    }
+        scanf("%d", &n);
 
-    printf("%ld",X2);
+        if(i==0 || n > max)
+        {
+            max = n;
+        }
+    }
+     printf("%d", max);
 
     return 0;
 }
