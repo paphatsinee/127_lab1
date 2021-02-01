@@ -7,7 +7,7 @@ int main()
     scanf("%ld",&N);
     for(i=1,i<=N;i++)
     {
-        scanf()
+        scanf("%ld",&a[i])
     }
 
     printf("%ld",X2);
