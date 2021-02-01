@@ -2,15 +2,14 @@
 #include<math.h>
 int main()
 {
-    int n,b,sum;
+
+    int n,m,sum;
     scanf("%d",&n);
-    if(n>=0&&n<=1000000000)
+    if(n>=0&&n<pow(10,1000000))
     {
-        if(b>=0&&b<=1000000000)
-        {
-            sum=a+b;
-            printf("%d",sum);
-        }
+            sum=(n%3);
+            m=(n%11);
+            printf("%d %d",sum,m);
     }
     return 0;
 }
