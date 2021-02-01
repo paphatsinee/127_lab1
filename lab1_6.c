@@ -2,22 +2,42 @@
 
 int main()
 {
-    int n,m,t;
-    char a;
+    int n,m,t,i,j,k;
+    char a,g;
     scanf("%d %d %d",&n,&m,&t);
-    fflush(stdin)
-    scanf("%c",&a)
-     for(i = 0; i < N; i++)
+    fflush(stdin);
+    scanf("%c",&a);
+    if( a=='L')
     {
-        scanf("%d", &n);
-
-        if(i==0 || n > max)
+        for(i=0;i<t;i++)
         {
-            max = n;
-            lo = i+1;
+            for(j=1;j<=n;j++)
+            {
+                g='L';
+            }
+            for(k=1;k<=m;k++)
+            {
+                g='R';
+            }
+
         }
     }
-     printf("%d %d",lo,max);
+    else if( a=='R')
+    {
+        for(i=0;i<t;i++)
+        {
+            for(k=1;k<=m;k++)
+            {
+                g='R';
+            }
+            for(j=1;k<=n;j++)
+            {
+                g='L';
+            }
+
+        }
+    }
+     printf("%c",g);
 
     return 0;
 }
