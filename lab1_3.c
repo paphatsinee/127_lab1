@@ -3,13 +3,13 @@
 int main()
 {
 
-    int n,m,sum;
-    scanf("%d",&n);
+    long int n,m,sum;
+    scanf("%ld",&n);
     if(n>=0&&n<pow(10,1000000))
     {
             sum=(n%3);
             m=(n%11);
-            printf("%d %d",sum,m);
+            printf("%ld %ld",sum,m);
     }
     return 0;
 }
